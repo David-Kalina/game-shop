@@ -1,4 +1,5 @@
 import { Directus } from '@directus/sdk'
+import ItemType from '../types/Item'
 
 const directus = new Directus('https://nsjezvl3.directus.app')
 
@@ -7,8 +8,14 @@ directus.auth.login({
   password: process.env.DIRECTUS_PASSWORD as string,
 })
 
-export const getItems = async () => {
-  const items = (await directus.items('items').readByQuery()).data
+export const getItems = async (page: number = 1, limit = 25) => {
+  const items = (await directus.items('items').readByQuery({ page, limit }))
+    .data
 
-  return items
+  return items as ItemType[]
+}
+
+export const getPages = async () => {
+  const pages = (await directus.items('items').readByQuery({ limit: -1 })).data
+  return pages as ItemType[]
 }
