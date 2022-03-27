@@ -1,17 +1,18 @@
 import { Box, Flex } from '@chakra-ui/layout'
 import React from 'react'
+import Header from './Header'
 
-function Layout() {
+function Layout({ children }: { children: React.ReactNode }) {
   return (
     <Flex
       height="100vh"
       width="100vw"
       flexDirection="column"
       justifyContent="space-between"
-      alignItems="center"
+      alignItems="stretch"
     >
-      <Box>Header</Box>
-      <Box>Body</Box>
+      <Header />
+      <Box flexGrow={1}>{children}</Box>
       <Box>Footer</Box>
     </Flex>
   )
