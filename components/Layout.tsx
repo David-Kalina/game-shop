@@ -1,12 +1,9 @@
-import { Box, Flex } from '@chakra-ui/layout'
-import React from 'react'
+import { Flex } from '@chakra-ui/layout'
 import Body from './Body'
 import Footer from './Footer'
 import Header from './Header'
 
-import data from '../data/seedData.json'
-
-function Layout({ children }: { children: React.ReactNode }) {
+function Layout({ items }: { items: any[] }) {
   return (
     <Flex
       height="100vh"
@@ -16,7 +13,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       alignItems="stretch"
     >
       <Header />
-      <Body items={data as any} />
+      <Body items={items} />
       <Footer />
     </Flex>
   )
