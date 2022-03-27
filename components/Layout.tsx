@@ -4,6 +4,8 @@ import Body from './Body'
 import Footer from './Footer'
 import Header from './Header'
 
+import data from '../data/seedData.json'
+
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <Flex
@@ -14,7 +16,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       alignItems="stretch"
     >
       <Header />
-      <Body />
+      <Body items={data as any} />
       <Footer />
     </Flex>
   )
