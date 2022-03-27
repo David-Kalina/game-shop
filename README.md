@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Game Shop 
+## **The Project**
+### **What**
+Game Shop is going to be an e commerce website built using Next.JS and React. The website will be video game themed and be powered by [RAWG](https://rawg.io/apidocs). 
 
-## Getting Started
+### **Why**
+Creating an e commerce list has been on my todo list for a while now. I finally feel ready to take a stab at it. I'll also be trying out a new development workflow that I've been meaning to try. Usually, as a solo developer (that's changed) I iterate and implement without much planning. This process has been great early in my career as I hadn't built much and had many technologies to learn. However, I found that as I improved my skills I still had trouble closing out projects. My codebase would get polluted with unfinished ideas and working within the codebase became a slog. This time around I want to be a better planner. So for this projects I'm going to spend more time upfront planning, developing mockups, defining an MVP, and leveraging GitHub issues and projects. My hope is that I'll be able to develop a codebase that is collaboration friendly and organized.
 
-First, run the development server:
+## **MVP**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Game Shop MVP will be accessible from the web and allow users to browse video games, add them to their cart and checkout. Users should be able to perform these actions in both desktop and mobile viewports.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### UI MVP
+- Mobile Design
+- Desktop Design
+- Search for video games
+- Filter video games  
+- Show video game reviews
+### Checkout MVP
+- Add to cart
+- Remove from cart
+- Edit cart
+- Toggle quantity
+- Show price total
+- Calculate tax
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Data MVP
+- Define data schema
+- 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Headless CMS MVP
+- Upload data to a a cms
+- Fetch data from CMS
+  
+### Review MVP
+- Users can write a review
+  
 
-## Learn More
+### SEO MVP
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
