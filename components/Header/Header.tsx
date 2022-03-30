@@ -1,10 +1,12 @@
 import { Stack, Text } from '@chakra-ui/layout'
 import { SkeletonCircle } from '@chakra-ui/skeleton'
 import React from 'react'
+import Search from '../Search'
 
 function Header() {
   return (
     <Stack
+      align="center"
       direction="row"
       justifyContent="space-between"
       px="2rem"
@@ -15,7 +17,8 @@ function Header() {
       width="100%"
     >
       <SkeletonCircle width="30px" />
-      <Stack direction="row">
+      <Stack direction="row" align="center">
+        <Search />
         <Text>Item</Text>
         <Text>Item</Text>
         <Text>Item</Text>

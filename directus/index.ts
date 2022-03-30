@@ -19,3 +19,9 @@ export const getPages = async () => {
   const pages = (await directus.items('items').readByQuery({ limit: -1 })).data
   return pages as ItemType[]
 }
+
+export const getItemsByQuery = async (query: string) => {
+  const items = (await directus.items('items').readByQuery({ search: query }))
+    .data
+  return items as ItemType[]
+}
